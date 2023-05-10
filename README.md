@@ -111,6 +111,7 @@
 - `sm_wearit2` - equips a cosmetic on slot 2 [:seven:](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
 - `sm_wearit3` - equips a cosmetic on slot 3 [:seven:](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Notes about command usage
 console and chat commands are formatted differently, for example if you want to kick a player named George you should do `sm_kick george` in the console, OR `!kick george` or `/kick george` in the chat
 
@@ -132,11 +133,13 @@ for most commands, you can use "magic targets" to specify specific players:
 
 **example:** if you want to set your class to scout you do `sm_sc @me 1`
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 1 - Convar Faking
 `sm_fcvar` basically tells a player that a server cvar is set when in reality it isn't. for example, if a server has `sv_cheats 0`, doing `sm_fcvar george sv_cheats 1` will make George's game think the server has `sv_cheats 1`
 
 this command doesn't have much use, but faking `sv_cheats 1` on a player basically grants them access to all the clientside cheat commands (same ones that you gained access to in the HUD exploit, including but not limited to `thirdperson`, excluding but not limited to `noclip` which would require the server itself to have `sv_cheats 1`)
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 2 - Item Attributes
 `sm_addwepatt` and `sm_removewepatt` are used to add or remove attributes of a player's currently held weapon. `sm_addattrib` and `sm_remattrib` are used to add or remove attributes of a player or a specific entity
 
@@ -166,8 +169,9 @@ string based attributes (such as #796 for minmode viewmodel offsets) can **NOT**
 
 **not all format examples from above apply.** for a list of all attributes, including seeing which weapon uses said attributes and what values they have said attributes said to, see http://www.tf2tools.net/utilities/schema-attributes
 
-for a list of all hidden attributes, see the file !!! fixme !!!
+for a list of all hidden attributes, see [tf2hiddenattribs.txt](https://github.com/brokenphilip/bulb-hub-commands/blob/main/tf2hiddenattribs.txt)
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 3 - Entity Properties
 in layman's terms, entity properties are named variables attached to entities. for example, player entities have `m_iHealth` which represents their health. most of it is very technical, so please **don't use it unless you know what you're doing**, because it can very quickly lead to client and/or server crashes
 
@@ -186,15 +190,19 @@ the latest versions of netprops.txt (use the command with the `send` parameter) 
 - `m_vecOrigin` (send) (vector) - the entity's position
 - `m_iName` (data) (string) - the entity's name (NOT classname, NOT the player name)
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 4 - Roll the Dice
 for a list of rtd effects, see https://github.com/Phil25/RTD/blob/master/configs/rtd2_perks.default.cfg
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 5 - Give Weapon
 for a list of item indexes, see https://wiki.alliedmods.net/Team_fortress_2_item_definition_indexes
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 6 - Player Conditions
 for a list of conditions, see https://wiki.teamfortress.com/wiki/Cheats#addcond
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 7 - Wearit
 **the wearit plugin has been disabled until further notice, if you'd like for it to be re-enabled for whatever reason please let me know**
 
@@ -206,6 +214,7 @@ values above 29 will be treated as integers, use an [RGB to int converter](https
 
 for a list of effects and cosmetics, see items_game.txt (located in `Team Fortress 2\tf\scripts\items`)
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 8 - Discord Whitelist
 use this to enable the whitelist: `sm_cvar sm_discord_whitelist 1` (likewise, set it to 0 to disable the whitelist)
 
@@ -214,6 +223,7 @@ use this to enable the whitelist: `sm_cvar sm_discord_whitelist 1` (likewise, se
 3. whitelist disabled, **with password**: only people with the password can join
 4. **whitelist enabled, with password**: only verified discord members OR (not and) people with the password can join
 
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Syntax and examples for commonly used commands
 for other generic sourcemod commands not listed here (such as `sm_kick`, `sm_slap` etc...), see https://wiki.alliedmods.net/Admin_commands_(sourcemod)
 
