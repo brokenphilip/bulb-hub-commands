@@ -3,172 +3,89 @@
 2. [Usage](https://github.com/brokenphilip/bulb-hub-commands#usage)
 
 # Full command list
-
-`ftz_cheats` - [not a command] grants you access to cheat commands. note that for several cheat commands you'll need to use sm_fcvar :one:
-
-`sm_addattrib` - adds an attribute to a player or an entity :two:
-
-`sm_addcond` - adds a condition to a player :six:
-
-`sm_addtime` - adds (removes if negative number) seconds to the round timer
-
-`sm_addwepatt` - adds an attribute to a player's weapon :two:
-
-`sm_ban` - bans a player
-
-`sm_bring` - teleports someone to you
-
-`sm_cancelvote` - cancels an ongoing vote
-
-`sm_cap_disable` - disable the objective
-
-`sm_cap_enable` - enable the objective
-
-`sm_create_toy` - creates a physics toy (given a custom model, otherwise spawns scout's soccer ball)
-
-`sm_csay` - prints a HUD message to the center of the screen. equivalent to prefixing your chat message with @@@
-
-`sm_cvar` - sets a server cvar. this command also works with "hidden" cvars like sv_airaccelerate. for a complete list of console commands, see <https://developer.valvesoftware.com/wiki/List_of_TF2_console_commands_and_variables> :eight:
-
-`sm_entprop` - sets an entity's integer property :three:
-
-`sm_entpropent` - sets an entity's entity index property :three:
-
-`sm_entpropfloat` - sets an entity's float property :three:
-
-`sm_entpropstring` - sets an entity's string property :three:
-
-`sm_entpropvector` - sets an entity's vector property :three:
-
-`sm_fcvar` - fakes a server cvar to a player :one:
-
-`sm_forcedecal` - force-sets a player's objector/cosmetic decal. sm_decal for the non-admin version. do sm_decalhelp for info on how to use
-
-`sm_forcertd` - force rtd on a player, also accepts an optional specific roll you want to apply and an optional time :four:
-
-`sm_forcewearit` - force equip cosmetics on a player :seven:
-
-`sm_freeze` - without arguments, freezes the entity you're pointing at. with arguments, freezes a player with an optional amount of time
-
-`sm_gag` - prevents a player from using text chat
-
-`sm_gimme` - given an item index, equips you with that weapon :five:
-
-`sm_givew` - given an item index, equips a player with that weapon :five:
-
-`sm_goto_auth_bypass` - [not a command] grants you access to sm_goto without needing confirmation by the target
-
-`sm_goto_ban` - bans a player from using the goto plugin
-
-`sm_goto_listbans` - lists goto plugin bans
-
-`sm_goto_unban` - unbans a player from using the goto plugin
-
-`sm_grab` - grabs an entity (players, dropped weapons and ammo packs, vehicles, some physics props and some projectiles are supported)
-
-`sm_gravity` - sets a player's gravity
-
-`sm_hsay` - prints a HUD message to the bottom of the screen
-
-`sm_kick` - kicks a player
-
-`sm_listents` - searches for all entities with the given classname. wildcard character `*` is supported
-
-`sm_listrounds` - list all the playable rounds/stages for the current map
-
-`sm_map` - changes the map
-
-`sm_move` - moves a player to a specified team (none, spec, red, blu)
-
-`sm_mute` - prevents a player from using voice chat
-
-`sm_noclip` - applies noclip to a player. it's preferrable to bind "sm_noclip @me" for convenience
-
-`sm_nominate_addmap` - forces a map nomination
-
-`sm_playround` - opens a menu with all the playable rounds/stages for the current map, or plays the round with the given name if provided
-
-`sm_rainbow` - gives a player a rainbow or custom colored glow
-
-`sm_remattrib` - removes a player's or an entity's attribute. only works for attributes that you've applied via commands, for static attributes see :two:
-
-`sm_removecond` - removes a condition from a player :six:
-
-`sm_remwepatt` - removes a weapon's attribute. only works for attributes that you've applied via commands, for static attributes see :two:
-
-`sm_rename` - renames a player
-
-`sm_resize` - resizes a player
-
-`sm_resizehands` - resizes a player's hands
-
-`sm_resizehead` - resizes a player's head
-
-`sm_resizetorso` - resizes a player's torso
-
-`sm_resizereset` - resets all of a player's resizes
-
-`sm_respawn` - respawns a player
-
-`sm_rweapons` - remove all weapons from a player
-
-`sm_say` - admin chat say. equivalent to prefixing your chat message with @
-
-`sm_sbuildex` - opens the engineer building spawning menu
-
-`sm_sc` - set a player's class
-
-`sm_setclass` - set a player's class
-
-`sm_sethealth` - set a player's health
-
-`sm_settime` - sets the round timer in seconds
-
-`sm_silence` - gags and mutes a player
-
-`sm_slap` - slaps a player
-
-`sm_slay` - kills a player
-
-`sm_starttime` - starts the round timer if stopped
-
-`sm_stoptime` - stops the round timer
-
-`sm_throw` - throws a grabbed entity
-
-`sm_tpb` - teleports you back to where you were before your goto
-
-`sm_unban` - unbans a player
-
-`sm_ungag` - ungags a player
-
-`sm_unmute` - unmutes a player
-
-`sm_unsilence` - ungags and unmutes a player
-
-`sm_vehicle` - opens the vehicle spawning menu
-
-`sm_votealltalk` - casts a vote to disable/enable alltalk
-
-`sm_voteban` - casts a vote to ban a player
-
-`sm_voteff` - casts a vote to disable/enable friendly fire
-
-`sm_votegravity` - casts a vote to set gravity
-
-`sm_votekick` - casts a vote to kick a player
-
-`sm_votemap` - casts a vote whether to change the server map (or to one of the several maps)
-
-`sm_voteslay` - casts a vote to kill a player
-
-`sm_wearit` - equips 5 cosmetics, an unusual and sets them to the specified paint :seven:
-
-`sm_wearit1` - equips a cosmetic on slot 1 :seven:
-
-`sm_wearit2` - equips a cosmetic on slot 2 :seven:
-
-`sm_wearit3` - equips a cosmetic on slot 3 :seven:
+- `ftz_cheats` - [not a command] grants you access to cheat commands. note that for several cheat commands you'll need to use sm_fcvar :one:
+- `sm_addattrib` - adds an attribute to a player or an entity :two:
+- `sm_addcond` - adds a condition to a player :six:
+- `sm_addtime` - adds (removes if negative number) seconds to the round timer
+- `sm_addwepatt` - adds an attribute to a player's weapon :two:
+- `sm_ban` - bans a player
+- `sm_bring` - teleports someone to you
+- `sm_cancelvote` - cancels an ongoing vote
+- `sm_cap_disable` - disable the objective
+- `sm_cap_enable` - enable the objective
+- `sm_create_toy` - creates a physics toy (given a custom model, otherwise spawns scout's soccer ball)
+- `sm_csay` - prints a HUD message to the center of the screen. equivalent to prefixing your chat message with @@@
+- `sm_cvar` - sets a server cvar. this command also works with "hidden" cvars like sv_airaccelerate. for a complete list of console commands, see <https://developer.valvesoftware.com/wiki/List_of_TF2_console_commands_and_variables> :eight:
+- `sm_entprop` - sets an entity's integer property :three:
+- `sm_entpropent` - sets an entity's entity index property :three:
+- `sm_entpropfloat` - sets an entity's float property :three:
+- `sm_entpropstring` - sets an entity's string property :three:
+- `sm_entpropvector` - sets an entity's vector property :three:
+- `sm_fcvar` - fakes a server cvar to a player :one:
+- `sm_forcedecal` - force-sets a player's objector/cosmetic decal. sm_decal for the non-admin version. do sm_decalhelp for info on how to use
+- `sm_forcertd` - force rtd on a player, also accepts an optional specific roll you want to apply and an optional time :four:
+- `sm_forcewearit` - force equip cosmetics on a player :seven:
+- `sm_freeze` - without arguments, freezes the entity you're pointing at. with arguments, freezes a player with an optional amount of time
+- `sm_gag` - prevents a player from using text chat
+- `sm_gimme` - given an item index, equips you with that weapon :five:
+- `sm_givew` - given an item index, equips a player with that weapon :five:
+- `sm_goto_auth_bypass` - [not a command] grants you access to sm_goto without needing confirmation by the target
+- `sm_goto_ban` - bans a player from using the goto plugin
+- `sm_goto_listbans` - lists goto plugin bans
+- `sm_goto_unban` - unbans a player from using the goto plugin
+- `sm_grab` - grabs an entity (players, dropped weapons and ammo packs, vehicles, some physics props and some projectiles are supported)
+- `sm_gravity` - sets a player's gravity
+- `sm_hsay` - prints a HUD message to the bottom of the screen
+- `sm_kick` - kicks a player
+- `sm_listents` - searches for all entities with the given classname. wildcard character `*` is supported
+- `sm_listrounds` - list all the playable rounds/stages for the current map
+- `sm_map` - changes the map
+- `sm_move` - moves a player to a specified team (none, spec, red, blu)
+- `sm_mute` - prevents a player from using voice chat
+- `sm_noclip` - applies noclip to a player. it's preferrable to bind "sm_noclip @me" for convenience
+- `sm_nominate_addmap` - forces a map nomination
+- `sm_playround` - opens a menu with all the playable rounds/stages for the current map, or plays the round with the given name if provided
+- `sm_rainbow` - gives a player a rainbow or custom colored glow
+- `sm_remattrib` - removes a player's or an entity's attribute. only works for attributes that you've applied via commands, for static attributes see :two:
+- `sm_removecond` - removes a condition from a player :six:
+- `sm_remwepatt` - removes a weapon's attribute. only works for attributes that you've applied via commands, for static attributes see :two:
+- `sm_rename` - renames a player
+- `sm_resize` - resizes a player
+- `sm_resizehands` - resizes a player's hands
+- `sm_resizehead` - resizes a player's head
+- `sm_resizetorso` - resizes a player's torso
+- `sm_resizereset` - resets all of a player's resizes
+- `sm_respawn` - respawns a player
+- `sm_rweapons` - remove all weapons from a player
+- `sm_say` - admin chat say. equivalent to prefixing your chat message with @
+- `sm_sbuildex` - opens the engineer building spawning menu
+- `sm_sc` - set a player's class
+- `sm_setclass` - set a player's class
+- `sm_sethealth` - set a player's health
+- `sm_settime` - sets the round timer in seconds
+- `sm_silence` - gags and mutes a player
+- `sm_slap` - slaps a player
+- `sm_slay` - kills a player
+- `sm_starttime` - starts the round timer if stopped
+- `sm_stoptime` - stops the round timer
+- `sm_throw` - throws a grabbed entity
+- `sm_tpb` - teleports you back to where you were before your goto
+- `sm_unban` - unbans a player
+- `sm_ungag` - ungags a player
+- `sm_unmute` - unmutes a player
+- `sm_unsilence` - ungags and unmutes a player
+- `sm_vehicle` - opens the vehicle spawning menu
+- `sm_votealltalk` - casts a vote to disable/enable alltalk
+- `sm_voteban` - casts a vote to ban a player
+- `sm_voteff` - casts a vote to disable/enable friendly fire
+- `sm_votegravity` - casts a vote to set gravity
+- `sm_votekick` - casts a vote to kick a player
+- `sm_votemap` - casts a vote whether to change the server map (or to one of the several maps)
+- `sm_voteslay` - casts a vote to kill a player
+- `sm_wearit` - equips 5 cosmetics, an unusual and sets them to the specified paint :seven:
+- `sm_wearit1` - equips a cosmetic on slot 1 :seven:
+- `sm_wearit2` - equips a cosmetic on slot 2 :seven:
+- `sm_wearit3` - equips a cosmetic on slot 3 :seven:
 
 # Usage
 
@@ -179,26 +96,16 @@ if a command argument requires you to use a space, for example when renaming "Ge
 some of these commands like `sm_voteff` do not require any arguments, but if you're unsure about the rest feel free to type out the command without any arguments and you'll see which arguments it takes
 
 for most commands, you can use "magic targets" to specify specific players:
-
-`@all` - all players,
-
-`@bots` - all bots,
-
-`@alive` - all alive players,
-
-`@dead` - all dead players,
-
-`@humans` - all non-bot players,
-
-`@aim` - current player you're aiming at,
-
-`@me` - yourself,
-
-`@!me` - everyone but yourself,
-
-`@red` - all red players,
-
-`@blue` - all blu players.
+- `@all` - all players,
+- `@bots` - all bots,
+- `@alive` - all alive players,
+- `@dead` - all dead players,
+- `@humans` - all non-bot players,
+- `@aim` - current player you're aiming at,
+- `@me` - yourself,
+- `@!me` - everyone but yourself,
+- `@red` - all red players,
+- `@blue` - all blu players.
 
 **example:** if you want to set your class to scout you do `sm_sc @me 1`
 
