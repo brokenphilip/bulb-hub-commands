@@ -1,6 +1,18 @@
 # Contents
-1. [Full command list](https://github.com/brokenphilip/bulb-hub-commands#full-command-list)
-2. [Usage](https://github.com/brokenphilip/bulb-hub-commands#usage)
+- [Full command list](https://github.com/brokenphilip/bulb-hub-commands#full-command-list)
+- [Notes about command usage](https://github.com/brokenphilip/bulb-hub-commands#notes-about-command-usage)
+- [Note 1 - Convar Faking](https://github.com/brokenphilip/bulb-hub-commands#note-1---convar-faking)
+- [Note 2 - Item Attributes](https://github.com/brokenphilip/bulb-hub-commands#note-2---item-attributes)
+  - [Most common format types](https://github.com/brokenphilip/bulb-hub-commands#most-common-format-types)
+  - [Notes about attributes](https://github.com/brokenphilip/bulb-hub-commands#notes-about-attributes)
+- [Note 3 - Entity Properties](https://github.com/brokenphilip/bulb-hub-commands#note-3---entity-properties)
+  - [Some commonly used entity properties](https://github.com/brokenphilip/bulb-hub-commands#some-commonly-used-entity-properties)
+- [Note 4 - Roll the Dice](https://github.com/brokenphilip/bulb-hub-commands#note-4---roll-the-dice)
+- [Note 5 - Give Weapon](https://github.com/brokenphilip/bulb-hub-commands#note-5---give-weapon)
+- [Note 6 - Player Conditions](https://github.com/brokenphilip/bulb-hub-commands#note-6---player-conditions)
+- [Note 7 - Wearit](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
+- [Note 8 - Discord Whitelist](https://github.com/brokenphilip/bulb-hub-commands#note-8---discord-whitelist)
+- [Syntax and examples for commonly used commands](https://github.com/brokenphilip/bulb-hub-commands#syntax-and-examples-for-commonly-used-commands)
 
 # Full command list
 - `ftz_cheats` - [not a command] grants you access to cheat commands. note that for several cheat commands you'll need to use sm_fcvar :one:
@@ -118,7 +130,7 @@ this command doesn't have much use, but faking `sv_cheats 1` on a player basical
 
 static attributes are the ones which came with the item already, the only way to disable them is to nullify them, see below
 
-## most common format types
+## Most common format types
 **(not all of these examples apply, see section below)**
 - `additive` - simple number (example: for #16, it defines how much health you get back from a hit), but it can also act like `or`, see below
 - `or` - acts as an on/off switch for an attribute (example: for #20, 1 means it will crit against burning players, 0 means it won't)
@@ -129,7 +141,7 @@ static attributes are the ones which came with the item already, the only way to
 - `account_id` - given a steamid `[U:1:bla]`, the account_id would be `bla`. **make sure to pass as int** (example: for attribute #186, my steam id is `[U:1:120694876]` and thus setting it to 120694876 will show "Gift from: brokenphilip")
 - anything with `index` - usually values taken from the item schema (items_game.txt) (example: for attribute #134, 701 is `weapon_unusual_hot`, which can be added to a weapon)
 
-## notes about attributes
+## Notes about attributes
 some attributes will not apply until you visit a resupply locker or respawn
 
 only on this server, some attributes will be overridden by another plugin (balancemod for example) once you visit a resupply locker or respawn. this shouldn't really be an issue most of the time, but let me know if it is
@@ -162,7 +174,7 @@ the latest versions of netprops.txt (use the command with the `send` parameter) 
 - `m_vecOrigin` (send) (vector) - the entity's position
 - `m_iName` (data) (string) - the entity's name (NOT classname, NOT the player name)
 
-# Note 4 - Roll The Dice
+# Note 4 - Roll the Dice
 for a list of rtd effects, see https://github.com/Phil25/RTD/blob/master/configs/rtd2_perks.default.cfg
 
 # Note 5 - Give Weapon
@@ -195,7 +207,7 @@ for other generic sourcemod commands not listed here (such as `sm_kick`, `sm_sla
 
 arguments in "< >" are required, while arguments in "[ ]" are optional
 
-## Addattrib/Addwepatt
+## sm_addattrib/sm_addwepatt
 `sm_addattrib/sm_addwepatt <target> <attrib> <val> [pass]` :two:
 
 - target (addattrib) - pass the player name to set an attribute to the player OR `##index`, where index is the entity index (useful for items you can't set as your active weapon, ie. spy watches or cosmetics)
@@ -206,7 +218,7 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example:** implying entity with index 123 is a tf_weapon_invis, `sm_addattrib ##123 #35 1.5` will give it attribute 35 (cloak regen rate) and set it to +50%
 
-## Addcond
+## sm_addcond
 `sm_addcond <target> <condition>` :six:
 
 - target - player name
@@ -214,14 +226,14 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example:** `sm_addcond george 27` will apply the mad milk effect to George
 
-## Addtime
+## sm_addtime
 `sm_addtime <time>`
 
 - time - adds to the round timer this many seconds. use negative values to deduct instead
 
 **example:** `sm_addtime -20` will shave 20 seconds off the round timer
 
-## Cvar
+## sm_cvar
 `sm_cvar <cvar> [value]` :eight:
 
 - cvar - name of the cvar to query
@@ -233,7 +245,7 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **for more examples, check out note 8 above**
 
-## Entprop
+## sm_entprop
 `sm_entprop(ent/float/string/vector) <entity> <send/data> <prop> [value1] [value2] [value3]` :three:
 
 - entity - the index of the entity
@@ -247,7 +259,7 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 - `sm_entprop 1 send m_iHealth` displays said player's current health
 - `sm_entpropvector 1 send m_vecOrigin 0 0 0` sets the player's origin to the (0, 0, 0) point of the map
 
-## Fcvar
+## sm_fcvar
 `sm_fcvar <target> <cvar> <value>` :one:
 
 - target - player name
@@ -256,7 +268,7 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example:** `sm_fcvar george sv_cheats 1` fakes sv_cheats 1 to George
 
-## Forcertd
+## sm_forcertd
 `sm_forcertd <target> [perk] [time] [override]` :four:
 
 - target - player name
@@ -266,7 +278,7 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example** `sm_forcertd george smite` smites George
 
-## Givew/Gimme
+## sm_givew/sm_gimme
 `sm_givew <target> <index>`
 
 `sm_gimme <index>` :five:
@@ -276,7 +288,7 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example:** `sm_givew george 0` gives George a Bat
 
-## Listents
+## sm_listents
 `sm_listents <query>`
 
 - query - the classname to search for
@@ -285,15 +297,15 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 for a list of all supported entities, see https://developer.valvesoftware.com/wiki/List_of_Team_Fortress_2_Entities
 
-## Setclass/Sc
-`sm_setclass/sc <target> <class>`
+## sm_setclass/sm_sc
+`sm_setclass/sm_sc <target> <class>`
 
 - target - player name
 - class - class name, or a number from 1 to 9 representing said class. `random` or 0 picks a random class
 
 **example:** `sm_sc george 7` sets George's class to Sniper
 
-## Wearit1/2/3
+## sm_wearit1/2/3
 `sm_wearit1/2/3 <item>, [effect], [paint]` :seven:
 
 - item - sets the item for the 1st, 2nd or 3rd slot depending on the command. 0 to reset
@@ -302,7 +314,7 @@ for a list of all supported entities, see https://developer.valvesoftware.com/wi
 
 **example:** `sm_wearit2 105, 248, 13` sets your 2nd cosmetic to a mann co. orange starfire brigade helm
 
-## Forcewearit/Wearit
+## sm_forcewearit/sm_wearit
 `sm_forcewearit <target> <item1>, [item2], [item3], [item4], [item5], [effect], [paint]`
 
 `sm_wearit <item1>, [item2], [item3], [item4], [item5], [effect], [paint]` :seven:
@@ -326,5 +338,7 @@ for a list of all supported entities, see https://developer.valvesoftware.com/wi
 5. the flashdance footies,
 6. the starfire effect on the brigade helm,
 7. mann co. orange paint
+
 in that order, to George
+
 ![image](https://github.com/brokenphilip/bulb-hub-commands/assets/13336890/558209cd-a170-456e-b971-bc058baee010)
