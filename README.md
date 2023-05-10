@@ -362,3 +362,5 @@ for a list of all supported entities, see https://developer.valvesoftware.com/wi
 in that order, to George
 
 ![image](https://github.com/brokenphilip/bulb-hub-commands/assets/13336890/558209cd-a170-456e-b971-bc058baee010)
+
+###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
