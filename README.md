@@ -13,13 +13,25 @@
 - [Note 7 - Wearit](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
 - [Note 8 - Discord Whitelist](https://github.com/brokenphilip/bulb-hub-commands#note-8---discord-whitelist)
 - [Syntax and examples for commonly used commands](https://github.com/brokenphilip/bulb-hub-commands#syntax-and-examples-for-commonly-used-commands)
+  - [sm_addattrib/sm_addwepatt](https://github.com/brokenphilip/bulb-hub-commands#sm_addattribsm_addwepatt-two)
+  - [sm_addcond](https://github.com/brokenphilip/bulb-hub-commands#sm_addcond-six)
+  - [sm_addtime](https://github.com/brokenphilip/bulb-hub-commands#sm_addtime)
+  - [sm_cvar](https://github.com/brokenphilip/bulb-hub-commands#sm_cvar-eight)
+  - [sm_entprop](https://github.com/brokenphilip/bulb-hub-commands#sm_entpropentfloatstringvector-three)
+  - [sm_fcvar](https://github.com/brokenphilip/bulb-hub-commands#sm_fcvar-one)
+  - [sm_forcertd](https://github.com/brokenphilip/bulb-hub-commands#sm_forcertd-four)
+  - [sm_givew/sm_gimme](https://github.com/brokenphilip/bulb-hub-commands#sm_givewsm_gimme-five)
+  - [sm_listents](https://github.com/brokenphilip/bulb-hub-commands#sm_listents)
+  - [sm_setclass/sm_sc](https://github.com/brokenphilip/bulb-hub-commands#sm_setclasssm_sc)
+  - [sm_wearit1/2/3](https://github.com/brokenphilip/bulb-hub-commands#sm_wearit123-seven)
+  - [sm_forcewearit/sm_wearit](https://github.com/brokenphilip/bulb-hub-commands#sm_forcewearitsm_wearit-seven)
 
 # Full command list
-- `ftz_cheats` - [not a command] grants you access to cheat commands. note that for several cheat commands you'll need to use sm_fcvar :one:
-- `sm_addattrib` - adds an attribute to a player or an entity :two:
-- `sm_addcond` - adds a condition to a player :six:
+- `ftz_cheats` - [not a command] grants you access to cheat commands. note that for several cheat commands you'll need to use sm_fcvar [:one:](https://github.com/brokenphilip/bulb-hub-commands#note-1---convar-faking)
+- `sm_addattrib` - adds an attribute to a player or an entity [:two:](https://github.com/brokenphilip/bulb-hub-commands#note-2---item-attributes)
+- `sm_addcond` - adds a condition to a player [:six:](https://github.com/brokenphilip/bulb-hub-commands#note-6---player-conditions)
 - `sm_addtime` - adds (removes if negative number) seconds to the round timer
-- `sm_addwepatt` - adds an attribute to a player's weapon :two:
+- `sm_addwepatt` - adds an attribute to a player's weapon [:two:](https://github.com/brokenphilip/bulb-hub-commands#note-2---item-attributes)
 - `sm_ban` - bans a player
 - `sm_bring` - teleports someone to you
 - `sm_cancelvote` - cancels an ongoing vote
@@ -27,20 +39,20 @@
 - `sm_cap_enable` - enable the objective
 - `sm_create_toy` - creates a physics toy (given a custom model, otherwise spawns scout's soccer ball)
 - `sm_csay` - prints a HUD message to the center of the screen. equivalent to prefixing your chat message with @@@
-- `sm_cvar` - sets a server cvar. this command also works with "hidden" cvars like sv_airaccelerate. for a complete list of console commands, see <https://developer.valvesoftware.com/wiki/List_of_TF2_console_commands_and_variables> :eight:
-- `sm_entprop` - sets an entity's integer property :three:
-- `sm_entpropent` - sets an entity's entity index property :three:
-- `sm_entpropfloat` - sets an entity's float property :three:
-- `sm_entpropstring` - sets an entity's string property :three:
-- `sm_entpropvector` - sets an entity's vector property :three:
+- `sm_cvar` - sets a server cvar. this command also works with "hidden" cvars like sv_airaccelerate. for a complete list of console commands, see <https://developer.valvesoftware.com/wiki/List_of_TF2_console_commands_and_variables> [:eight:](https://github.com/brokenphilip/bulb-hub-commands#note-8---discord-whitelist)
+- `sm_entprop` - sets an entity's integer property [:three:](https://github.com/brokenphilip/bulb-hub-commands#note-3---entity-properties)
+- `sm_entpropent` - sets an entity's entity index property [:three:](https://github.com/brokenphilip/bulb-hub-commands#note-3---entity-properties)
+- `sm_entpropfloat` - sets an entity's float property [:three:](https://github.com/brokenphilip/bulb-hub-commands#note-3---entity-properties)
+- `sm_entpropstring` - sets an entity's string property [:three:](https://github.com/brokenphilip/bulb-hub-commands#note-3---entity-properties)
+- `sm_entpropvector` - sets an entity's vector property [:three:](https://github.com/brokenphilip/bulb-hub-commands#note-3---entity-properties)
 - `sm_fcvar` - fakes a server cvar to a player :one:
 - `sm_forcedecal` - force-sets a player's objector/cosmetic decal. sm_decal for the non-admin version. do sm_decalhelp for info on how to use
-- `sm_forcertd` - force rtd on a player, also accepts an optional specific roll you want to apply and an optional time :four:
-- `sm_forcewearit` - force equip cosmetics on a player :seven:
+- `sm_forcertd` - force rtd on a player, also accepts an optional specific roll you want to apply and an optional time [:four:](https://github.com/brokenphilip/bulb-hub-commands#note-4---roll-the-dice)
+- `sm_forcewearit` - force equip cosmetics on a player [:seven:](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
 - `sm_freeze` - without arguments, freezes the entity you're pointing at. with arguments, freezes a player with an optional amount of time
 - `sm_gag` - prevents a player from using text chat
-- `sm_gimme` - given an item index, equips you with that weapon :five:
-- `sm_givew` - given an item index, equips a player with that weapon :five:
+- `sm_gimme` - given an item index, equips you with that weapon [:five:](https://github.com/brokenphilip/bulb-hub-commands#note-5---give-weapon)
+- `sm_givew` - given an item index, equips a player with that weapon [:five:](https://github.com/brokenphilip/bulb-hub-commands#note-5---give-weapon)
 - `sm_goto_auth_bypass` - [not a command] grants you access to sm_goto without needing confirmation by the target
 - `sm_goto_ban` - bans a player from using the goto plugin
 - `sm_goto_listbans` - lists goto plugin bans
@@ -58,9 +70,9 @@
 - `sm_nominate_addmap` - forces a map nomination
 - `sm_playround` - opens a menu with all the playable rounds/stages for the current map, or plays the round with the given name if provided
 - `sm_rainbow` - gives a player a rainbow or custom colored glow
-- `sm_remattrib` - removes a player's or an entity's attribute. only works for attributes that you've applied via commands, for static attributes see :two:
-- `sm_removecond` - removes a condition from a player :six:
-- `sm_remwepatt` - removes a weapon's attribute. only works for attributes that you've applied via commands, for static attributes see :two:
+- `sm_remattrib` - removes a player's or an entity's attribute. only works for attributes that you've applied via commands, for static attributes see [:two:](https://github.com/brokenphilip/bulb-hub-commands#note-2---item-attributes)
+- `sm_removecond` - removes a condition from a player [:six:](https://github.com/brokenphilip/bulb-hub-commands#note-6---player-conditions)
+- `sm_remwepatt` - removes a weapon's attribute. only works for attributes that you've applied via commands, for static attributes see [:two:](https://github.com/brokenphilip/bulb-hub-commands#note-2---item-attributes)
 - `sm_rename` - renames a player
 - `sm_resize` - resizes a player
 - `sm_resizehands` - resizes a player's hands
@@ -94,10 +106,10 @@
 - `sm_votekick` - casts a vote to kick a player
 - `sm_votemap` - casts a vote whether to change the server map (or to one of the several maps)
 - `sm_voteslay` - casts a vote to kill a player
-- `sm_wearit` - equips 5 cosmetics, an unusual and sets them to the specified paint :seven:
-- `sm_wearit1` - equips a cosmetic on slot 1 :seven:
-- `sm_wearit2` - equips a cosmetic on slot 2 :seven:
-- `sm_wearit3` - equips a cosmetic on slot 3 :seven:
+- `sm_wearit` - equips 5 cosmetics, an unusual and sets them to the specified paint [:seven:](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
+- `sm_wearit1` - equips a cosmetic on slot 1 [:seven:](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
+- `sm_wearit2` - equips a cosmetic on slot 2 [:seven:](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
+- `sm_wearit3` - equips a cosmetic on slot 3 [:seven:](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
 
 # Notes about command usage
 console and chat commands are formatted differently, for example if you want to kick a player named George you should do `sm_kick george` in the console, OR `!kick george` or `/kick george` in the chat
@@ -207,8 +219,8 @@ for other generic sourcemod commands not listed here (such as `sm_kick`, `sm_sla
 
 arguments in "< >" are required, while arguments in "[ ]" are optional
 
-## sm_addattrib/sm_addwepatt
-`sm_addattrib/sm_addwepatt <target> <attrib> <val> [pass]` :two:
+## sm_addattrib/sm_addwepatt [:two:](https://github.com/brokenphilip/bulb-hub-commands#note-2---item-attributes)
+`sm_addattrib/sm_addwepatt <target> <attrib> <val> [pass]`
 
 - target (addattrib) - pass the player name to set an attribute to the player OR `##index`, where index is the entity index (useful for items you can't set as your active weapon, ie. spy watches or cosmetics)
 - target (addwepatt) - pass the player name to set an attribute to the player's currently held weapon
@@ -218,8 +230,8 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example:** implying entity with index 123 is a tf_weapon_invis, `sm_addattrib ##123 #35 1.5` will give it attribute 35 (cloak regen rate) and set it to +50%
 
-## sm_addcond
-`sm_addcond <target> <condition>` :six:
+## sm_addcond [:six:](https://github.com/brokenphilip/bulb-hub-commands#note-6---player-conditions)
+`sm_addcond <target> <condition>`
 
 - target - player name
 - condition - the number of the condition
@@ -233,8 +245,8 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example:** `sm_addtime -20` will shave 20 seconds off the round timer
 
-## sm_cvar
-`sm_cvar <cvar> [value]` :eight:
+## sm_cvar [:eight:](https://github.com/brokenphilip/bulb-hub-commands#note-8---discord-whitelist)
+`sm_cvar <cvar> [value]`
 
 - cvar - name of the cvar to query
 - value - if not passed, displays current value of cvar. if passed, sets the cvar's value to this
@@ -243,10 +255,8 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example:** `sm_cvar sv_password 123` sets the server's password to 123. if you want to remove the password, set it to `none`
 
-**for more examples, check out note 8 above**
-
-## sm_entprop
-`sm_entprop(ent/float/string/vector) <entity> <send/data> <prop> [value1] [value2] [value3]` :three:
+## sm_entprop(ent/float/string/vector) [:three:](https://github.com/brokenphilip/bulb-hub-commands#note-3---entity-properties)
+`sm_entprop(ent/float/string/vector) <entity> <send/data> <prop> [value1] [value2] [value3]`
 
 - entity - the index of the entity
 - send/data - `send` if using netprops.txt, `data` if using datamaps.txt
@@ -259,8 +269,8 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 - `sm_entprop 1 send m_iHealth` displays said player's current health
 - `sm_entpropvector 1 send m_vecOrigin 0 0 0` sets the player's origin to the (0, 0, 0) point of the map
 
-## sm_fcvar
-`sm_fcvar <target> <cvar> <value>` :one:
+## sm_fcvar [:one:](https://github.com/brokenphilip/bulb-hub-commands#note-1---convar-faking)
+`sm_fcvar <target> <cvar> <value>`
 
 - target - player name
 - cvar - the cvar to fake
@@ -268,8 +278,8 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example:** `sm_fcvar george sv_cheats 1` fakes sv_cheats 1 to George
 
-## sm_forcertd
-`sm_forcertd <target> [perk] [time] [override]` :four:
+## sm_forcertd [:four:](https://github.com/brokenphilip/bulb-hub-commands#note-4---roll-the-dice)
+`sm_forcertd <target> [perk] [time] [override]`
 
 - target - player name
 - perk - perk name, leave blank for random
@@ -278,10 +288,10 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 
 **example** `sm_forcertd george smite` smites George
 
-## sm_givew/sm_gimme
+## sm_givew/sm_gimme [:five:](https://github.com/brokenphilip/bulb-hub-commands#note-5---give-weapon)
 `sm_givew <target> <index>`
 
-`sm_gimme <index>` :five:
+`sm_gimme <index>`
 
 - target - player name
 - index - the weapon's item index
@@ -305,8 +315,8 @@ for a list of all supported entities, see https://developer.valvesoftware.com/wi
 
 **example:** `sm_sc george 7` sets George's class to Sniper
 
-## sm_wearit1/2/3
-`sm_wearit1/2/3 <item>, [effect], [paint]` :seven:
+## sm_wearit1/2/3 [:seven:](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
+`sm_wearit1/2/3 <item>, [effect], [paint]`
 
 - item - sets the item for the 1st, 2nd or 3rd slot depending on the command. 0 to reset
 - effect - unusual effect index
@@ -314,10 +324,10 @@ for a list of all supported entities, see https://developer.valvesoftware.com/wi
 
 **example:** `sm_wearit2 105, 248, 13` sets your 2nd cosmetic to a mann co. orange starfire brigade helm
 
-## sm_forcewearit/sm_wearit
+## sm_forcewearit/sm_wearit [:seven:](https://github.com/brokenphilip/bulb-hub-commands#note-7---wearit)
 `sm_forcewearit <target> <item1>, [item2], [item3], [item4], [item5], [effect], [paint]`
 
-`sm_wearit <item1>, [item2], [item3], [item4], [item5], [effect], [paint]` :seven:
+`sm_wearit <item1>, [item2], [item3], [item4], [item5], [effect], [paint]`
 
 **mind the commas wherever you see them.** also, these commands work regardless of class cosmetic restrictions
 
