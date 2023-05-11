@@ -177,7 +177,7 @@ in layman's terms, entity properties are named variables attached to entities. f
 
 use one of the commands depending on whether the entity property in question accepts an integer, an entity index, a float, a string or a vector. **please mind the types**, while they (most likely) won't crash the server, they will not succeed and no error message will be sent back - if after typing a command you don't get a response, chances are you used the wrong type
 
-the latest versions of netprops.txt (use the command with the `send` parameter) and datamaps.txt (use the command with the `data` parameter) can be found in this channel's pinned messages. since they're massive ass files, use notepad++ for example to open them
+for a full list or entity properties, see [netprops.txt](https://raw.githubusercontent.com/brokenphilip/bulb-hub-commands/main/netprops.txt) (use the command with the `send` parameter) and [datamaps.txt](https://raw.githubusercontent.com/brokenphilip/bulb-hub-commands/main/datamaps.txt) (use the command with the `data` parameter) respectively
 
 ## Some commonly used entity properties
 - `m_iHealth` (send for players, data for the rest) (integer) - for a bunch of entities (including but not limited to players, bosses and breakables), their current health
