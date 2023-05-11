@@ -147,6 +147,9 @@ static attributes are the ones which came with the item already, the only way to
 
 ## Most common format types
 **(not all of these examples apply, see section below)**
+
+#N, where N is a number, indicates an attribute ID from the list linked below (for example, #1 is damage penalty, #15 is no random crits etc...)
+
 - `additive` - simple number (example: for #16, it defines how much health you get back from a hit), but it can also act like `or`, see below
 - `or` - acts as an on/off switch for an attribute (example: for #20, 1 means it will crit against burning players, 0 means it won't)
 - `percentage` - decimal number which acts like a percentage:
@@ -161,13 +164,13 @@ some attributes will not apply until you visit a resupply locker or respawn
 
 only on this server, some attributes will be overridden by another plugin (balancemod for example) once you visit a resupply locker or respawn. this shouldn't really be an issue most of the time, but let me know if it is
 
-added attributes will be lost if you switch loadouts or classes. dropping weapons with modified attributes will preserve said attributes though
+added attributes will be lost if you switch loadouts or classes (but not if you visit a resupply locker or respawn), but dropping weapons with modified attributes will preserve said attributes on the dropped weapon
 
 please note that some attributes are purely cosmetic, and also not all attributes will work on all weapons in all cases, this is a tf2 limitation. if there's a specific combination you'd *really* like to try out, let me know and i'll look into making a custom plugin for it
 
 string based attributes (such as #796 for minmode viewmodel offsets) can **NOT** be applied under any circumstance. doing so can potentially crash the server
 
-**not all format examples from above apply.** for a list of all attributes, including seeing which weapon uses said attributes and what values they have said attributes said to, see http://www.tf2tools.net/utilities/schema-attributes
+**not all format examples from above apply.** for a list of all attributes, including seeing which weapon uses said attributes and what values they have said attributes said to, see https://wiki.teamfortress.com/wiki/List_of_item_attributes
 
 for a list of all hidden attributes, see [tf2hiddenattribs.txt](https://github.com/brokenphilip/bulb-hub-commands/blob/main/tf2hiddenattribs.txt)
 
