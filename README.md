@@ -197,6 +197,8 @@ for a full list or entity properties, see [netprops.txt](https://raw.githubuserc
 # Note 4 - Roll the Dice
 for a list of rtd effects, see https://github.com/Phil25/RTD/blob/master/configs/rtd2_perks.default.cfg
 
+please note that the Flying rtd is broken and has been removed from the server
+
 ###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 5 - Give Weapon
 for a list of item indexes, see https://wiki.alliedmods.net/Team_fortress_2_item_definition_indexes
@@ -213,9 +215,9 @@ for a list of paints, see https://docs.google.com/spreadsheets/d/1OzC4M_Vjj1Bjde
 
 for example, slate is 1, purple is 2, greed is 22, debonair is 23, waterlogged is 29
 
-values above 29 will be treated as integers, use an [RGB to int converter](https://www.checkyourmath.com/convert/color/rgb_decimal.php)
+values above 29 will be treated as integers, which you can use to set **custom colors** for items! to do this, [pick a color](https://www.google.com/search?q=color+picker), copy its RGB values and use an [RGB to int converter](https://www.checkyourmath.com/convert/color/rgb_decimal.php). due to the limitation that fixed colors use numbers from 0 to 29 inclusive, you can't use RGB values (0, 0, 0 to 29). If you wish to paint a cosmetic fully black (RGB (0, 0, 0)) for example, you will have to use 65793 instead (RGB (1, 1, 1))
 
-for a list of effects and cosmetics, see items_game.txt (located in `Team Fortress 2\tf\scripts\items`)
+for a complete list of effects and cosmetics, see items_game.txt (located in `Team Fortress 2\tf\scripts\items`)
 
 ###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 8 - Discord Whitelist
