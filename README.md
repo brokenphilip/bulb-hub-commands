@@ -266,7 +266,7 @@ arguments in "< >" are required, while arguments in "[ ]" are optional
 - cvar - name of the cvar to query
 - value - if not passed, displays current value of cvar. if passed, sets the cvar's value to this
 
-**example:** `sm_cvar sv_cheats` displays the server's current sv_cheats value
+**example:** `sm_cvar sv_cheats` displays the server's current sv_cheats value. please note that, only on bulb hub, when the server has `sv_cheats 1` set, due to the limitation of the `ftz_cheats` plugin, NON-admins will STILL NOT be able to use commands such as `noclip` (you can grant them noclip using the command `sm_noclip <name>`, but they will not be able to toggle it freely)
 
 **example:** `sm_cvar sv_password 123` sets the server's password to 123. if you want to remove the password, set it to `none`
 
