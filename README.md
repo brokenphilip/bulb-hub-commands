@@ -217,7 +217,27 @@ for example, slate is 1, purple is 2, greed is 22, debonair is 23, waterlogged i
 
 values above 29 will be treated as integers, which you can use to set **custom colors** for items! to do this, [pick a color](https://www.google.com/search?q=color+picker), copy its RGB values and use an [RGB to int converter](https://www.checkyourmath.com/convert/color/rgb_decimal.php). due to the limitation that fixed colors use numbers from 0 to 29 inclusive, you can't use RGB values (0, 0, 0 to 29). If you wish to paint a cosmetic fully black (RGB (0, 0, 0)) for example, you will have to use 65793 instead (RGB (1, 1, 1))
 
-for a complete list of effects and cosmetics, see items_game.txt (located in `Team Fortress 2\tf\scripts\items`)
+for a complete list of cosmetics and effects, see items_game.txt (located in `Team Fortress 2\tf\scripts\items`)
+
+most of the time you can find cosmetics by searching (CTRL+F) their name, for example:
+```
+"30036"
+{
+	"name"		"The Filamental"
+...
+```
+The Filamental's ID is `30036`
+
+unusual effects have their own names though, and as such might be harder to find, for example:
+```
+"702"
+{
+	"system"				"weapon_unusual_isotope"
+...
+```
+the Isotope effect's ID is `702`
+
+alternatively, you can also use bptf's particle list here: https://backpack.tf/developer/particles
 
 ###### [back to top](https://github.com/brokenphilip/bulb-hub-commands#contents)
 # Note 8 - Discord Whitelist
