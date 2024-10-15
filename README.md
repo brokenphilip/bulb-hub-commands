@@ -189,6 +189,7 @@ for a full list or entity properties, see [netprops.txt](https://raw.githubuserc
 - `m_nStreaks` (send) (integer) - for players, their killstreak
 - `m_iFOV` (send) (integer) - for players, their FOV (0 to reset)
 - `m_flRageMeter` (send) (float) - for players, their rage meter (phlog for example, 100.0 is 100%)
+- `m_nCurrency` (send) (integer) - for players, the amount of MvM money they have
 - `m_flChargeLevel` (send) (float) - for mediguns, their charge (1.0 is 100%)
 - `m_vecOrigin` (send) (vector) - the entity's position
 - `m_iName` (data) (string) - the entity's name (NOT classname, NOT the player name)
